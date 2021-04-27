@@ -1,0 +1,29 @@
+{
+	"name": "solixr-website",
+	"version": "1.0.0",
+	"description": "SOLIXR website",
+	"main": "index.html",
+	"scripts": {
+		"css-build": "mkdir -p dist && cp -r src/* dist && rm dist/*.scss && node-sass --omit-source-map-url src/main.scss dist/main.css",
+		"css-watch": "npm run css-build -- --watch",
+		"start": "npm run css-watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SOLIXR/website.git"
+	},
+	"keywords": [
+		"solixr",
+		"website"
+	],
+	"author": "Thomas Raffray",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/SOLIXR/website/issues"
+	},
+	"homepage": "https://github.com/SOLIXR/website#readme",
+	"devDependencies": {
+		"bulma": "^0.9.2",
+		"node-sass": "^5.0.0"
+	}
+}

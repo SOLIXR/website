@@ -1,2 +1,3 @@
-# website
-Solixr website
+# Solixr website
+
+Made with Bulma
